@@ -1,0 +1,574 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+/* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fraunces", serif;
+    background-color: #FFFFFF;
+    color: #2A1A35;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+.logo,
+.footer-logo {
+    font-family: "Fraunces", serif;
+}
+
+section {
+    padding: 80px 0;
+}
+
+
+/* =========================
+   HEADER / NAVIGATION
+========================= */
+
+.header {
+    background-color: #352745;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #B8860B;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D8BFD8;
+}
+
+.nav-button {
+    background-color: #B8860B;
+    color: #FFFFFF;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #D8BFD8;
+    color: #3B1F5B;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: #3B1F5B;
+    color: #FFFFFF;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 650px;
+    margin-bottom: 35px;
+    color: #D8BFD8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #B8860B;
+    color: #FFFFFF;
+}
+
+.primary-btn:hover {
+    background-color: #FFFFFF;
+    color: #3B1F5B;
+}
+
+.secondary-btn {
+    border: 2px solid #B8860B;
+    color: #FFFFFF;
+}
+
+.secondary-btn:hover {
+    background-color: #B8860B;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #3B1F5B;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    color: #555555;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.stat h3 {
+    color: #B8860B;
+    font-size: 34px;
+}
+
+.stat p {
+    color: #3B1F5B;
+    font-weight: 600;
+}
+
+
+/* =========================
+   MENU SECTION
+========================= */
+
+.menu-section {
+    background-color: #F3EAF6;
+}
+
+.menu-section h2 {
+    text-align: center;
+    color: #3B1F5B;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.food-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(59, 31, 91, 0.12);
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(59, 31, 91, 0.2);
+}
+
+.food-image {
+    height: 210px;
+    background-color: #3B1F5B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D8BFD8;
+    font-size: 18px;
+}
+
+.food-info {
+    padding: 25px;
+}
+
+.food-info h3 {
+    color: #3B1F5B;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.food-info p {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.food-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: #B8860B;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.order-btn {
+    background-color: #3B1F5B;
+    color: #FFFFFF;
+    padding: 9px 15px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.order-btn:hover {
+    background-color: #B8860B;
+}
+
+
+/* =========================
+   WHY SAVORA
+========================= */
+
+.why-section {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.why-section h2 {
+    color: #3B1F5B;
+    font-size: 42px;
+    margin-bottom: 45px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature {
+    flex: 1;
+    padding: 30px;
+    border-top: 4px solid #B8860B;
+}
+
+.feature h3 {
+    color: #3B1F5B;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    color: #666666;
+}
+
+
+/* =========================
+   CUSTOMER REVIEW
+========================= */
+
+.review-section {
+    background-color: #3B1F5B;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.review-section blockquote {
+    max-width: 800px;
+    margin: auto;
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+.review-name {
+    margin-top: 25px;
+    color: #D8BFD8;
+    font-weight: 600;
+}
+
+.stars {
+    margin-top: 8px;
+    color: #B8860B;
+    letter-spacing: 4px;
+}
+
+
+/* =========================
+   RESERVATION SECTION
+========================= */
+
+.reservation-section {
+    background-color: #F3EAF6;
+}
+
+.reservation-section h2 {
+    text-align: center;
+    color: #3B1F5B;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.reservation-form {
+    max-width: 800px;
+    margin: auto;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(59, 31, 91, 0.12);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #3B1F5B;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #D8BFD8;
+    border-radius: 5px;
+    font-family: "Fraunces", serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #B8860B;
+}
+
+.reserve-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3B1F5B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reserve-button:hover {
+    background-color: #B8860B;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    background-color: #FFFFFF;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #3B1F5B;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    color: #B8860B;
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item strong {
+    color: #3B1F5B;
+}
+
+.contact-item p {
+    color: #666666;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #3B1F5B;
+    color: #FFFFFF;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    color: #B8860B;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.footer p {
+    color: #D8BFD8;
+    margin: 10px 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+}
+
+.footer-links a:hover {
+    color: #B8860B;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .stats {
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+}
